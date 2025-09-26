@@ -3,11 +3,11 @@ import pickle
 st.title('Health Insurance Premium Prediction')
 age = st.number_input("Enter your age", min_value=0, max_value=100, value=30, step=1)
 st.write("Your age is:", age)
-bmi = st.number_input("Enter your BMI", min_value=12.5, max_value=35.0, value=25.0, step=0.1)
+bmi = st.number_input("Enter your BMI", min_value=12.5, max_value=35.0, value=25.0, step=0.5)
 st.write("Your BMI is:", bmi)
 children = st.selectbox(
     "Childrens:",
-    (1,2,3,4,5,6,7,8,9),
+    (0,1,2,3,4,5,6,7,8,9),
     index=None,
 )
 
@@ -92,4 +92,5 @@ if st.button('Predict Premium', type="primary"):
             "**Disclaimer:** This is a machine learning-based prediction and should be considered an estimate. "
             "Actual insurance premiums can vary based on more detailed assessments by insurance providers.",
             icon="ℹ️"
+
         )
