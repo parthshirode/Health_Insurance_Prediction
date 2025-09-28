@@ -58,7 +58,7 @@ if st.button('Predict Premium', type="primary"):
 
         # --- Display the results beautifully ---
         
-        st.balloons() # A little celebration for the result!
+        st.snow() # A little celebration for the result!
         
         st.header('Prediction Result', divider='rainbow')
 
@@ -94,3 +94,4 @@ if st.button('Predict Premium', type="primary"):
             icon="ℹ️"
 
         )
+
